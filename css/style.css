@@ -316,6 +316,21 @@ body::after {
   transition: all 0.3s ease 0s;
 }
 
+.popap__closes {
+  width: 100%;
+  text-align: end;
+}
+
+.popup__close {
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.375rem;
+  background-color: #aaa9a9;
+  border: 0.0625rem solid black;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
 [class*=-ibg] {
   position: relative;
 }
@@ -1009,7 +1024,9 @@ body::after {
 }
 
 .cart-image__title {
-  font-size: 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.33;
 }
 
 .cart-image__rating {
@@ -2562,6 +2579,10 @@ body::after {
 @media (any-hover: hover) {
   .button-popap:hover {
     background: #ad4a03;
+  }
+
+  .popup__close:hover {
+    background-color: #696969;
   }
 
   .header__logo:hover {
